@@ -1,0 +1,161 @@
+/*  Start Universal */
+
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+a {
+    padding:20px 10px;
+    color: seashell;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* End Universal */
+
+/* Start Navigation */
+
+header {
+    display: flex;
+    height:69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    width:100%;
+    top:0; /* The nav wasn't fixing to the top, there was a gap between the top of the browser screen and where the nav started */
+    left: 0; /* I added this because without it there is a gap of 8 on the left for some reason. */
+}
+
+
+.logo {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    height:50px;
+}
+
+.navLinks {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* End Navigation */
+
+/* Start Mission Section */
+
+#mission {
+    height: 700px;
+    background-image: url(images/img-mission-background.jpg);
+    margin-top: 70px;
+}
+
+.content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+/* End Mission Section */
+
+/* Start Tea of the Month Section */
+
+#teaMonth {
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#teaMonth img{
+    height: 200px;
+    width: 300px;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.teas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items {
+    padding: 10px;
+}
+
+.items span {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* End Tea of the Month Section */
+
+/* Start Locations Section */
+
+#locations {
+    height: 500px;
+    background-image: url(images/img-locations-background.jpg);
+    padding-top: 70px;
+}
+
+.storeAddress {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* End Locations Section */
+
+/* Start Contact Section */
+
+#contact {
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* End Contact Section */
+
+/* Start Copyright Section */
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+/* End Copyright Section */
